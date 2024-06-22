@@ -1,0 +1,71 @@
+$ git clone "url" //clona um repositorio do github 
+
+$ git init //inicializa um bash do git na pasta
+
+$ git status //verifica arquivos adicionados e não adicionados no controle de versão
+
+$ git add "nome-do-arquivo"."extensão do arquivo" //adiciona um arquivo pendente ao controle de versão
+
+$ git commit -m "mensagem" //adiciona um comentário à commit
+
+$ git config --global user.email "seu-email" //relaciona o email do github ao arquivo do git
+
+$ git config --global user.name "seu-nome" //relaciona o seu nome ao arquivo salvo no git
+
+$ git remote add origin "url" //origin é o nome que você dará ao repositório remoto, url é a mesma do repositório, isso define para onde o código irá ser enviado
+
+$ git remote -v //lista os repositórios remotos associados ao projeto local
+
+$ git remote remove "nome-do-repositorio" //remove o repositório 
+
+$ git remote set-url "nome-do-repositorio" "nova-url" //altera a url do repositorio 
+
+$ git remote rename "nome-do-repositorio" "novo-nome-do-repositorio" //altera o nome do repositorio, por exemplo, de origin para novo-origin
+
+$ git push //ao rodar, irá aparecer --set-upstream origin *nome-da-branch*, basta copiar e colar no comando //irá adicionar o código na nuvem (github). LEMBRANDO! O origin sera o apelido do repositório, você pode alterar!
+
+$ git reflog //imprime o histórico dos versionamentos, o número no início seria o ID do versionamento
+
+$ git reset --hard "id_da_versão" //retorna a uma versão
+
+$ git branch //mostra as branchs existentes, a branch selecionada estará verde
+
+$ git branch "nome-da-nova-branch" //adiciona uma nova branch
+
+$ git checkout nome-da-branch //altera a branch para a especificada //ao dar push irá aparecer *git push --set-upstream origin *nome-da-branch**, basta colar esse código 
+
+$ git merge *nome-da-branch-a-ser-mesclada* //mescla as atualizações feitas em outra branch //é necessário estar na branch que receberá a mesclagem 
+
+$ git pull // traz a última versão do servidor para o local
+
+***************************ATENÇÃO***************************
+
+### SIGA A SEQUÊNCIA PARA MELHOR FUNCIONALIDADE DO MERGE ###
+
+$ git pull "branch_principal" //puxa os dados mais atualizados do servidor
+
+$ git branch "nome_da_branch_nova" //cria a nova branch
+
+$ git checkout "nome_da_branch_nova" //altera para a branch nova
+
+*TRABALHE NO CÓDIGO DENTRO DA NOVA BRANCH*
+
+$ git checkout "branch_principal" //altera para a branch principal
+
+$ git merge "nome_da_branch_nova" //mescla a nova branch à branch principal
+
+****************************************************************************
+
+$ git
+
+$ git
+
+$ git
+
+$ git
+
+$ git
+
+$ git
+
+$ git
